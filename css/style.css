@@ -1,32 +1,94 @@
-*{
-    box-sizing: border-box;
-}
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+* {
+  box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  height: 175px;
-  background: #2c3e50;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 body {
@@ -34,6 +96,7 @@ body {
   /*Effet de scroll lorsqu'on clique sur une ancre mais ne marche que sur FireFox ou pas du tout
     scroll-behavior: smooth;*/
 }
+
 h1 {
   font-size: 45px;
   font-family: "Anton", sans-serif;
@@ -41,6 +104,7 @@ h1 {
   text-align: center;
   letter-spacing: 1px;
 }
+
 h2 {
   font-size: 35px;
   color: #2c3e50;
@@ -48,15 +112,24 @@ h2 {
   font-weight: bold;
   text-shadow: 1px 1px 2px #aaa;
 }
+
 h3 {
   font-size: 22px;
   color: #2c3e50;
   padding: 15px;
   text-shadow: 1px 1px 2px #aaa;
 }
+
 h4 {
   text-align: center;
   margin-top: 30px;
+}
+
+/**************HEADER INDEX****************/
+
+header {
+  background: #2c3e50;
+  height: 175px;
 }
 
 #logo {
@@ -71,27 +144,27 @@ h4 {
   width: 50%;
   padding-top: 50px;
 }
+
 #social {
   float: left;
   width: 25%;
 }
+
 #social i {
   font-size: 30px;
   text-align: right;
   padding: 15px 30px 0 0;
   display: block;
 }
+
 header a {
   color: #2980b9;
   text-decoration: none;
 }
-h1 {
-  font-size: 45px;
-  font-family: "Anton", sans-serif;
-  color: #2980b9;
-  text-align: center;
-  letter-spacing: 1px;
-}
+
+/*******************FIN HEADER*********************/
+
+/**************DEBUT NAV********************/
 
 nav {
   background: #2980b9;
@@ -123,21 +196,35 @@ nav a:hover {
   background: #2c3e50;
   color: white;
 }
+ul {
+  display: flex;
+  width: 80%;
+  list-style-type: none;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+/**************FIN NAV********************/
+
+/*FAIRE LE ZONING AVEC DES HAUTEUR ET LARGEUR AVANT DE PLACER LES ELEMENTS DANS LES ZONES POUR ENSUITE SUPPRIMER LES HAUTEURS*/
 
 main {
   background: rgba(178, 178, 178, 0.3);
   width: 1000px;
   margin: 0 auto;
 }
+
 aside {
   height: 250px;
   background: #a6d6c3;
 }
+
 section {
   margin-top: 50px;
   /*    background: #DAF7A6;*/
   padding: 20px;
 }
+
 footer {
   background: #2980b9;
   height: 30px;
@@ -145,6 +232,303 @@ footer {
   padding: 5px 10px;
 }
 
-li{
-    display: inline;
+/**************DEBUT PAGE TEXTE********************/
+
+/****************FIN PAGE TEXTE********************/
+
+/****************DEBUT PAGE SELECTEURS*************/
+
+.select p {
+  color: red;
 }
+
+.select p:first-of-type,
+.select p:last-of-type {
+  color: pink;
+}
+
+.select p:nth-of-type(5),
+.select p:nth-of-type(6) {
+  color: black;
+}
+
+.select div:not(.zoneB) {
+  font-weight: bold;
+}
+
+.select .zoneA {
+  color: #f56f56;
+}
+
+.select .zoneB {
+  color: #996633;
+}
+
+.select .zoneB .couleurBleu {
+  color: blue;
+  font-size: 16px;
+}
+
+.select #zoneC {
+  color: #98f32f;
+}
+
+.select #zoneD span {
+  color: #32ff32;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/****************FIN PAGE SELECTEURS***************/
+
+/****************DEBUT PAGE IMAGE********************/
+
+/********************FIN PAGE IMAGE******************/
+
+/********************DEBUT PAGE POSITION******************/
+
+/*********ABSOLUTE********/
+
+/*******RELATIVE*******/
+
+/*le bouton pour remonter en haut de page */
+
+button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 350%;
+  color: #2d5c7f;
+}
+
+.trente {
+  width: 30%;
+  padding: 20px;
+  font-size: 22px;
+  background: #3c1b1f;
+  color: #f6e1b5;
+  font-weight: bold;
+}
+
+.cinquante {
+  width: 50%;
+  padding: 20px;
+  font-size: 22px;
+  background: #b21e4b;
+  color: #e2bf81;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.cent {
+  width: 100%;
+  padding: 20px;
+  font-size: 22px;
+  background: #e2bf81;
+  color: #b21e4b;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+/********************FLOAT*****************************/
+
+.float {
+  height: 170px;
+  width: 170px;
+  margin: 10px;
+  padding-top: 2px;
+  float: left;
+  text-align: center;
+  font-size: 25px;
+  background: #f8d771;
+  border: 2px solid darkred;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************Exercice Float *********************/
+
+.zone {
+  height: 70px;
+  background: #3a4750;
+}
+
+.zone1,
+.zone2,
+.zone3,
+.zone4 {
+  height: 250px;
+  width: 25%;
+  float: left;
+}
+
+.zone1 {
+  background: #2d5c7f;
+}
+
+.zone2 {
+  background: #fff1a8;
+}
+
+.zone3 {
+  background: #ff8f56;
+}
+
+.zone4 {
+  background: #984a59;
+}
+
+/***********************FLEXBOX*************************/
+
+.flex {
+  display: flex;
+  /*justify-content: space-around;*/
+  justify-content: space-between;
+  /*flex-direction: column;*/
+  /*flex-direction: row-reverse;*/
+}
+
+.flex div {
+  width: 150px;
+  height: 150px;
+  background: darkblue;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  border: 10px outset rgb(51, 51, 255);
+}
+
+/********************FIN PAGE POSITION******************/
+
+/*************************TABLEAU***********************/
+
+/*on met d'abord ces valeurs et ensuite on les commente*/
+
+/*th{
+    border: 1px solid blue;
+    width: 25%;
+}
+td{
+    border: 1px solid blue;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+}*/
+
+/**********************FIN TABLEAU***********************/
+
+/************************ZONING*************************/
+
+/***********************Zoning 1************************/
+
+/**********************Zoning 2 ************************/
+
+/**********************Zoning 3*************************/
+
+/**********************Zoning 4************************/
+
+/**********************Zoning 5*************************/
+
+/***********************Zoning 6************************/
+
+/***********************FIN ZONING**********************/
+
+/***************************LISTE************************/
+
+/**************************FIN LISTE************************/
+
+/***************LIEN & MENU*****************/
+
+/****************styliser les liens************/
+
+/****************MENU*********************/
+
+/*****Menu Déroulant*****/
+
+/****************FIN LIEN & MENU******************/
+
+/***************FORMULAIRE*******************/
+
+/***************FIN FORMULAIRE***************/
+
+/***************DEBUT MULTIMEDIA***************/
+
+/**************FIN MULTIMEDIA***************/
+
+/**************DEBUT ANIMATIONS*************/
+
+/*****infoBulle*****/
+
+/*****image grayscale & blur*****/
+
+/******Rotation d'un menu CSS3*******/
+
+/**************FIN ANIMATIONS***************/
+
+/* Zoning1 */
+.zonning {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.zonning1 {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
+.zonning1-2 {
+  display: flex;
+  height: 100%;
+}
+.zonning2 {
+  height: 500px;
+  width: 100%;
+  background-color: pink;
+}
+.zonning3 {
+  background-color: #984a59;
+  height: 500px;
+  width: 100%;
+}
+
+/* zoning2 */
+
+.zoning2-haut{
+  background-color: #6acafc;
+  height: 100px;
+  text-align: center;
+}
+.zoning2-flex{
+  display: flex;
+  height: 500px;
+}
+.zoning2-gauche{
+  background-color: blueviolet;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.zoning2-milieu{
+  background-color: #984a59;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.zoning2-droit{
+  background-color: #3a4750;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.zoning3-flex{
+  display: flex;
+  height: 500px;
+}
+
+/* zoning3 */
